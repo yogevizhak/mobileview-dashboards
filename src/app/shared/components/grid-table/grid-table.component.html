@@ -1,0 +1,44 @@
+<div class="grid-table-component">
+  <div class="sbd-grid-table-head-fixed">
+    <table *ngIf="renderGrid" class="sbd-grid-table u-full-width table-paging">
+      <!-- <thead style="table-layout: fixed;"-->
+      <thead>
+        <tr>
+          <th [attr.colspan]="columns.length" [ngStyle]="{'border-bottom': '0'}">
+            <h3 class="sbd-grid-table-title"> {{title}} </h3>
+
+            <div *ngIf="optional.filterable" class="sbd-grid-input-search-filter-container">
+              <input (keyup)="querySearch=$event.target.value" type="text" placeholder="Search name..." class="sbd-grid-input-search-filter"
+              />
+            </div>
+          </th>
+          <tr>
+            <th *ngFor="let dc of columns">{{dc.title}}</th>
+          </tr>
+      </thead>
+      <tbody class="sbd-grid-table-body" [class.flipping]="isFlipping">
+        <tr *ngFor="let row of rowsCopy">
+          <td *ngFor="let col of columns" class="elipsis-cell">{{row[col.name]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sbd-grid-table-body-scroll">
+    <table *ngIf="renderGrid" class="sbd-grid-table u-full-width table-paging">
+      <thead>
+        <tr>
+          <th *ngFor="let dc of columns">{{dc.title}}</th>
+        </tr>
+      </thead>
+
+      <tbody class="sbd-grid-table-body" [class.flipping]="isFlipping">
+        <tr *ngFor="let row of rows | StringFilterPipe: querySearch" class="sbd-grid-table-row">
+          <td *ngFor="let col of columns" class="sbd-grid-table-cell elipsis-cell" title="{{row[col.name]}}">{{row[col.name]}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <div class="transparentBottomLayer"></div>
+  </div>
+</div>
