@@ -1,0 +1,27 @@
+<div class="grid-stack-top-header">
+    <input type="checkbox" id="autoPos" [(ngModel)]="editMode" (click)="toggelEditMode()" />
+
+    <span> Edit Mode </span>
+    <!-- <span>&nbsp; | &nbsp;</span>
+
+    <button (click)="insertItem()">Add Item</button>
+    <input id="newItemName" [(ngModel)]="newItemName" />
+    <select [(ngModel)]="posNewItem" class="sbd-select">
+         <option value="first"> at first place </option>
+         <option value="auto"> with auto location </option>
+     </select>
+
+    <input type="button" (click)="getGridLayoutItemsData()" value="Get data" />
+
+    <span>&nbsp; | &nbsp;</span>
+
+    <input type="button" (click)="loadComponent()" value="Injectest" />-->
+</div>
+
+
+<div class="pendingWidgets">
+    <dynamic-component *ngFor="let widget of gridLayoutItemsData" id="{{widget.id}}" [componentData]="widget.data"></dynamic-component>
+</div>
+
+<div class="grid-stack">
+</div>
