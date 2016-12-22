@@ -1,0 +1,296 @@
+{
+    "name": "display_layout1",
+    "last_update": 354345345234,
+    "data": [
+        {
+            "id": "grid1",
+            "x": "0",
+            "y": "0",
+            "w": "4",
+            "h": "12",
+            "data": {
+                "component": "SbdGridTable",
+                "inputs": {
+                    "id": "grid1",
+                    "title": "5 Patients Waiting",
+                    "limit": 5,
+                    "columnminwidth": 100,
+                    "optional": {
+                        "loaded": true,
+                        "includePagination": false,
+                        "autoPaginate": true,
+                        "columnminwidth": 100,
+                        "test": "hello"
+                    },
+                    "rows": [
+                        {
+                            "time": "16 min",
+                            "name": "Tracy k.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false,
+                            "icon": "network_wifi",
+                            "image": "/assets/imgs/sbd-logo.png"
+                        },
+                        {
+                            "time": "20 min",
+                            "name": "Roy A.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false,
+                            "icon": "dvr"
+                        },
+                        {
+                            "time": "13 min",
+                            "name": "Clark G.",
+                            "location": "PACU / Waiting Area",
+                            "protected": true,
+                            "icon": "gps_fixed"
+                        },
+                        {
+                            "time": "11 min",
+                            "name": "Margaret S.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false,
+                            "icon": "insert_emoticon"
+                        },
+                        {
+                            "time": "8 min",
+                            "name": "Juhana H.",
+                            "location": "PACU / Waiting Area",
+                            "protected": true,
+                            "icon": "insert_emoticon"
+                        },
+                        {
+                            "time": "6 min",
+                            "name": "Bob k.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false,
+                            "icon": "insert_emoticon"
+                        },
+                        {
+                            "time": "3 min",
+                            "name": "Lasley R.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false
+                        },
+                        {
+                            "time": "3 min",
+                            "name": "Yonali M.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false
+                        },
+                        {
+                            "time": "2 min",
+                            "name": "Michel T.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false
+                        },
+                        {
+                            "time": "2 min",
+                            "name": "Ontario Q.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false
+                        },
+                        {
+                            "time": "1 min",
+                            "name": "Dona L.",
+                            "location": "PACU / Waiting Area",
+                            "protected": false
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "Time",
+                            "name": "time",
+                            "width": 80,
+                            "type": "text"
+                        },
+                        {
+                            "title": "Name",
+                            "name": "name",
+                            "type": "text"
+                        },
+                        {
+                            "title": "Location",
+                            "name": "location",
+                            "type": "text"
+                        },
+                        {
+                            "title": "Protected",
+                            "name": "protected",
+                            "type": "boolean"
+                        }
+                    ],
+                    "columnMode": "standard",
+                    "headerHeight": 40,
+                    "sortType": "multi",
+                    "rowHeight": 34
+                }
+            }
+        },
+        {
+            "id": "grid2",
+            "x": "0",
+            "y": "12",
+            "w": "6",
+            "h": "10",
+            "data": {
+                "component": "SbdGridTable",
+                "inputs": {
+                    "id": "grid2",
+                    "title": "Rooms List",
+                    "optional": {
+                        "columnminwidth": 100
+                    },
+                    "rows": [
+                        {
+                            "name": "Bay 11",
+                            "staff": "-",
+                            "status": "Occupied",
+                            "statustime": "5 min",
+                            "patientname": "Patrica S."
+                        },
+                        {
+                            "name": "Bay 12",
+                            "staff": "-",
+                            "status": "Occupied",
+                            "statustime": "8 min",
+                            "patientname": "Elonora B."
+                        },
+                        {
+                            "name": "Bay 13",
+                            "staff": "-",
+                            "status": "Ready",
+                            "statustime": "5 min",
+                            "patientname": "Tuyet H."
+                        },
+                        {
+                            "name": "Bay 14",
+                            "staff": "-",
+                            "status": "Occupied",
+                            "statustime": "5 min",
+                            "patientname": "Evonne M."
+                        },
+                        {
+                            "name": "Bay 15",
+                            "staff": "-",
+                            "status": "Occupied",
+                            "statustime": "5 min",
+                            "patientname": "Devon S."
+                        },
+                        {
+                            "name": "Bay 16",
+                            "staff": "-",
+                            "status": "Occupied",
+                            "statustime": "5 min",
+                            "patientname": "Patrica S."
+                        },
+                        {
+                            "name": "Bay 17",
+                            "staff": "-",
+                            "status": "Occupied",
+                            "statustime": "5 min",
+                            "patientname": "Patrica S."
+                        },
+                        {
+                            "name": "Bay 18",
+                            "staff": "aaaa",
+                            "status": "Occupied",
+                            "statustime": "5 min",
+                            "patientname": "Patrica S."
+                        }
+                    ],
+                    "columns": [
+                        {
+                            "title": "Room Name",
+                            "name": "name",
+                            "type": "text"
+                        },
+                        {
+                            "title": "Staff in room",
+                            "name": "staff",
+                            "type": "text"
+                        },
+                        {
+                            "title": "Status",
+                            "name": "status",
+                            "type": "text"
+                        },
+                        {
+                            "title": "Status Time",
+                            "name": "statustime",
+                            "type": "text"
+                        },
+                        {
+                            "title": "Patient Name",
+                            "name": "patientname",
+                            "type": "text"
+                        }
+                    ],
+                    "columnMode": "standard",
+                    "headerHeight": 40,
+                    "limit": 4,
+                    "sortType": "multi",
+                    "rowHeight": 34
+                }
+            }
+        },
+        {
+            "id": "map1",
+            "x": "6",
+            "y": "0",
+            "w": "6",
+            "h": "22"
+        },
+        {
+            "id": "total2",
+            "type": "total",
+            "x": "4",
+            "y": "6",
+            "w": "2",
+            "h": "6",
+            "data": {
+                "id": "total2",
+                "component": "sbdDataTotalBox",
+                "inputs": {
+                    "title": "total2",
+                    "subtitle": "subtext > total2",
+                    "metaOptions": {}
+                }
+            }
+        },
+        {
+            "id": "total1",
+            "type": "total",
+            "x": "4",
+            "y": "0",
+            "w": "2",
+            "h": "3",
+            "data": {
+                "id": "total1",
+                "component": "sbdDataTotalBox",
+                "inputs": {
+                    "title": "total1",
+                    "subtitle": "subtext > total1",
+                    "metaOptions": {}
+                }
+            }
+        },
+        {
+            "id": "total3",
+            "type": "total",
+            "x": "4",
+            "y": "3",
+            "w": "2",
+            "h": "3",
+            "data": {
+                "id": "total3",
+                "component": "sbdDataTotalBox",
+                "inputs": {
+                    "title": "total3",
+                    "subtitle": "subtext > total3",
+                    "metaOptions": {}
+                }
+            }
+        }
+    ]
+}
